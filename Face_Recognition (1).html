@@ -172,7 +172,7 @@ print(model.outputs)
 # $$\mathcal{J} = \sum^{m}_{i=1} \large[ \small \underbrace{\mid \mid f(A^{(i)}) - f(P^{(i)}) \mid \mid_2^2}_\text{(1)} - \underbrace{\mid \mid f(A^{(i)}) - f(N^{(i)}) \mid \mid_2^2}_\text{(2)} + \alpha \large ] \small_+ \tag{3}$$
 # Here, the notation "$[z]_+$" is used to denote $max(z,0)$.
 # 
-# **Notes**:
+# **Notes**: 
 # 
 # - The term (1) is the squared distance between the anchor "A" and the positive "P" for a given triplet; you want this to be small.
 # - The term (2) is the squared distance between the anchor "A" and the negative "N" for a given triplet, you want this to be relatively large. It has a minus sign preceding it because minimizing the negative of the term is the same as maximizing that term.
